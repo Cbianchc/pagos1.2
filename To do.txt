@@ -1,0 +1,10 @@
+Cosas para hacer en el futuro...
+
+- FILTROS.
+- Ya filtra por estado. ahora en ese estado filtra por fecha, antes fecha esta bloqueado
+y despues queda fijo estado. asi no se cruzan.
+
+- CALENDARIO basico
+
+- Colores para botones mas lindo?
+- Readme.md completo?
