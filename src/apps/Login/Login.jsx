@@ -16,7 +16,7 @@ import {
 } from '@mui/material';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import { useNavigate } from 'react-router-dom';
-// import { auth } from '../../data/firebase';
+import { auth } from '../../data/firebase';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { useAuth } from '../contexts/authContext';
 
@@ -86,7 +86,14 @@ const Login = () => {
               Ingresar
             </Typography>
             <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>
-              {/* <TextField
+            <Button variant="contained" color="primary" onClick={handleGoogleSignIn}>
+                Iniciar sesión con Google
+              </Button>
+              
+              <Typography component="h5" variant="p" mt={3}>
+              Ó
+            </Typography>
+              <TextField
                 margin="normal"
                 required
                 fullWidth
@@ -121,11 +128,7 @@ const Login = () => {
                 sx={{ mt: 3, mb: 2 }}
               >
                 Ingresar
-              </Button> */}
-              <Button variant="contained" color="primary" onClick={handleGoogleSignIn}>
-                Iniciar sesión con Google
               </Button>
-
 
               <Grid container>
                 <Grid item xs>
